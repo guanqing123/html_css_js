@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS定位机制</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        span{
+            display: inline-block;
+            border: 1px solid green;
+            padding: 50px 50px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<span>
+我们是中国共产党
+</span>
+<span>ddddd</span>
+<strong>
+        <pre>
+        span标签有这么几个特点:
+        1、span标签是一个内联元素,只能容纳文本或者其他内联元素；
+
+        2、和其他内联元素一样,内联元素的宽度和高度就是包含的文字或图片的宽度和高度
+
+        3、给span标签设置高height、宽width、上下内边距(padding-top/bottom)、上下外边距(margin-top/bottom)都是不起作用的。
+        给span标签设置左右内边距(padding-left/right)、左右外边距(margin-left/right)、行高(line-height)是有效的。
+
+        解决给span标签设置高height、宽width、上下内边距(padding-top/bottom)、上下外边距(margin-top/bottom)不起作用方法:
+        给span标签设置一个display属性(display:block;和display:inline-block;都可以)。
+        ---------------------
+        作者：野臻
+        来源：CSDN
+        原文：https://blog.csdn.net/u014589116/article/details/53844572
+        版权声明：本文为博主原创文章，转载请附上博文链接!
+        </pre>
+</strong>
+</body>
+</html>
