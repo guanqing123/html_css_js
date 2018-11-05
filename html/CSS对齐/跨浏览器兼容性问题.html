@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跨浏览器兼容性问题</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80%;
+            position: relative;
+            background-color: red;
+        }
+        .right{
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            background-color: #B0E0E6;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="right">
+        <p><b>注释：</b>当使用 position 属性进行对齐时，请始终包含 !DOCTYPE 声明！如果省略，则会在 IE 浏览器中产生奇怪的结果。</p>
+    </div>
+</div>
+</body>
+</html>
