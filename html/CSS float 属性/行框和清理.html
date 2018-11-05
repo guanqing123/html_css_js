@@ -10,11 +10,14 @@
         }
         .news img{
             float: left;
+            border: 1px solid green;
         }
         .news p{
             float: right;
+            border: 1px solid green;
         }
         .clear{
+            display: inline-block;
             clear: both;
         }
     </style>
@@ -23,7 +26,17 @@
 <div class="news">
     <img src="../../images/CSS%20float%20属性/eg_cute.gif" />
     <p>some text</p>
-    <div class="clear"></div>
+    <!--
+    为啥这里用div,clear:both有效，因为在被清理的元素的 “上外边距” 上添加足够的空间，
+    使元素的顶边缘垂直下降到浮动框下面。所以有效。
+    为什么这里用span,clear:both;无效,因为span属于行内元素,竖直方向上的margin/padding无效。
+    当把span设置成 display: inline-block;也无效，原因 inline-block 只能使 span 具有 block 的
+    宽度高度特性，但 margin/padding 无效。
+    所以把span设置成 display:block; 就可以。
+     -->
+    <span class="clear">ddddddddddddddddddd</span>
+
+    <!--<div class="clear">清除浮动</div>-->
 </div>
 </body>
 </html>
