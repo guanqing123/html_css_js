@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 background-origin 属性</title>
+    <style type="text/css">
+        img{
+            margin: 25px 0 0 25px;
+        }
+        pre{
+            width: 765px;
+            margin: 0 auto;
+            padding: 5px 0 0 0;
+            border: 1px dotted #785;
+            background: #f5f5f5;
+            line-height: 1.4;
+            font-family: Consolas;
+            text-align: left;
+            background: green;
+        }
+        .code_comment{
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+<div style="margin: 0 auto;border: 1px solid red;text-align: center">
+    <h3>CSS3 background-origin 属性</h3>
+    <p>background-origin 属性规定背景图片的定位区域。</p>
+    <p>背景图片可以放置于 content-box、padding-box 或 border-box 区域。</p>
+    <img src="../../images/CSS3背景/background-origin.gif" />
+    <h3>实例</h3>
+    <p>在 content-box 中定位背景图片：</p>
+    <pre>
+        div
+        {
+        background:url(bg_flower.gif);
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        -webkit-background-origin:content-box;<span class="code_comment">/* Safari */</span>
+        background-origin:content-box;
+        }
+    </pre>
+</div>
+</body>
+</html>
